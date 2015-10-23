@@ -1,7 +1,5 @@
 <?php get_header(); global $woo_options; ?>
 
-<!-- teste Git -->
-
     <div id="content" class="col-full">
 		<div id="main" class="col-left">
             
