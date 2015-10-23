@@ -5,6 +5,8 @@
 <title><?php woo_title(); ?></title>
 <?php woo_meta(); ?>
 
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" media="screen" />
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/style2.css" media="screen" />
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
