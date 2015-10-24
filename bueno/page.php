@@ -1,26 +1,38 @@
 <?php get_header(); ?>
        
-    <div id="content" class="col-full">
-		<div id="main" class="col-left">
+    <div class="container">
+		<div class="row">
 		
-			<?php if ( function_exists( "yoast_breadcrumb" )) { yoast_breadcrumb('<div id="breadcrumb"><p>','</p></div>'); } ?>
-            
+			            
             <?php if (have_posts()) : $count = 0; ?>
             <?php while (have_posts()) : the_post(); $count++; ?>
-                                                                        
-                <div class="post">
 
-                    <h1 class="title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
-                    
-                    <div class="entry">
-                    	<?php the_content(); ?>
+                <div class="col s6">
+                    <div class="card blue-grey darken-1">  
+                        <div class="card-content"> 
+                            <p>teste</p>
+                        </div>
                     </div>
-
-                </div><!-- /.post -->
+                </div><!--end col s6 post --> 
+                                                                        
+                <div class="col s6">
+                    <div class="col s7">
+                        <div class="card blue-grey darken-1 retira_borda">  
+                            <div class="card-content white-text retira_borda_padding"> 
+                                <h1 class="card-title add_margin_left"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>                               
+                             </div>
+                        </div>
+                    </div>
+                    <div class="col s12">
+                        <div class="card blue-light">
+                            <p>
+                                <?php the_content(); ?>
+                            </p>
+                        </div>
+                    </div>
+                </div><!--end col s6 post -->                 
                 
-                <?php if ('open' == $post->comment_status) : ?>
-					<?php comments_template('', true); ?>
-				<?php endif; ?>
+				
                                                     
 			<?php endwhile; else: ?>
 				<div class="post">

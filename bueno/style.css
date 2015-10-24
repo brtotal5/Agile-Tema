@@ -8201,6 +8201,23 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 /* Classes auxiliares as principais do Materialize*/
 
 .deslocamento_btn{
-	margin:10px 10px 0px 10px
+	margin:10px 10px 0px 10px;
 }
 
+.retira_borda_padding{
+  border-radius:0px!important;
+  padding:0px!important;
+  line-height:normal!important;  
+}
+
+.retira_margin{
+  margin:0px;
+}
+
+.retira_borda{
+  border-radius: 0px!important;
+}
+
+.add_margin_left{
+  margin:0px 0px 0px 10px!important;
+}
