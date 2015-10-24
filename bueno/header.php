@@ -37,19 +37,23 @@ $( document ).ready(function(){
 </script>	
 
 <body <?php body_class(); ?>>
+
+
 <nav>
-    <div class="nav-wrapper">
-		<div class="right hide-on-med-and-down">
-			<a class="btn waves-effect waves-light orange lighten-3 deslocamento_btn" href="#">Estou Interessado</a>
-		</div>
-	    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'items_wrap' => '<li id="item-id">Menu: </li>' ) ); ?>		
-        </ul>
-		<ul class="side-nav" id="mobile-demo">
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'items_wrap' => '<li id="item-id">Menu: </li>' ) ); ?> 
-		</ul>	  
-    </div>
+	<div class="container">
+	    <div class="nav-wrapper">
+			<div class="right hide-on-med-and-down">
+				<a class="btn waves-effect waves-light orange lighten-3 deslocamento_btn" href="#">Estou Interessado</a>
+			</div>
+		    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+	        <ul class="right hide-on-med-and-down">
+				<?php wp_nav_menu(); ?>	
+	        </ul>
+			<ul class="side-nav" id="mobile-demo">
+				<?php wp_nav_menu(); ?> 
+			</ul>	  
+	    </div>
+	</div>
 </nav>
 
 
@@ -59,7 +63,4 @@ $( document ).ready(function(){
 	  </h1>
 	</div>
 	
-
-<div id="container"> 	
-       
-	</div><!-- /#header -->
+<!-- /#header -->

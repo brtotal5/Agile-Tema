@@ -12,5 +12,11 @@ if ( function_exists('wp_nav_menu') ) {
 	add_theme_support( 'nav-menus' );
 	register_nav_menus( array( 'primary-menu' => __( 'Primary Menu' ), 'secondary-menu' => __( 'Secondary Menu' ) ) );
 }
+
+function my_init() {
+add_post_type_support('page', array('excerpt'));
+}
+add_action('init', 'my_init');
 	
 ?>
+

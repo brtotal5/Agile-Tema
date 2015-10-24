@@ -8211,7 +8211,11 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 }
 
 .retira_margin{
-  margin:0px;
+  margin:0px!important;
+}
+
+.retira_sombra{
+  box-shadow:none!important;
 }
 
 .retira_borda{
@@ -8220,4 +8224,21 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 
 .add_margin_left{
   margin:0px 0px 0px 10px!important;
+}
+
+.definir_altura{
+  height:400px;
+  background-color:red;
+}
+
+.definir_font{
+  font-size:22px;
+}
+
+.img_destaque_margin{
+  margin-top:-30px; 
+}
+
+.deslocamento_index{
+  z-index:-1;
 }
