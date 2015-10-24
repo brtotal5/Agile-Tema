@@ -8204,6 +8204,11 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 	margin:10px 10px 0px 10px;
 }
 
+.deslocamento_tel{
+  margin-left:20px;
+}
+
+
 .retira_borda_padding{
   border-radius:0px!important;
   padding:0px!important;
@@ -8240,5 +8245,5 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 }
 
 .deslocamento_index{
-  z-index:-1;
+  z-index:1;
 }

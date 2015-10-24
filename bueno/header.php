@@ -27,40 +27,53 @@
    
 <?php if ( is_single() ) wp_enqueue_script( 'comment-reply' ); ?>
 <?php wp_head(); ?>
+
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/includes/js/materialize.js"></script>
 </head>
 
 <script>
-$( document ).ready(function(){
- $(".button-collapse").sideNav();
-});
+	$( document ).ready(function(){
+		$(".button-collapse").sideNav(); 
+	});
 </script>	
 
-<body <?php body_class(); ?>>
 
+<body <?php body_class(); ?>>	
 
-<nav>
-	<div class="container">
-	    <div class="nav-wrapper">
-			<div class="right hide-on-med-and-down">
-				<a class="btn waves-effect waves-light orange lighten-3 deslocamento_btn" href="#">Estou Interessado</a>
-			</div>
-		    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-	        <ul class="right hide-on-med-and-down">
-				<?php wp_nav_menu(); ?>	
-	        </ul>
-			<ul class="side-nav" id="mobile-demo">
-				<?php wp_nav_menu(); ?> 
-			</ul>	  
-	    </div>
-	</div>
-</nav>
+	<?php 
 
+	$image = get_field('background');
+
+		if( !empty($image) ): ?>
+			<body <?php body_class(); ?> style="background-image: url('<?php echo $image['url']; ?>'); background-position:center top; background-repeat: no-repeat;">
+	<?php endif; ?>
+
+	<nav>
+		<!--<div class="container">-->
+		    <div class="nav-wrapper">
+				<div class="right hide-on-med-and-down">
+					<a class="btn waves-effect waves-light orange lighten-3 deslocamento_btn" href="#">Estou Interessado</a>
+				</div>			
+				<?php if( get_field('telefone_topo') ): ?>
+					<div class="right hide-on-med-and-down">
+						<span class="deslocamento_tel"><?php the_field('telefone_topo'); ?></span>
+					</div>
+				<?php endif; ?>			
+			    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+		        <ul class="left hide-on-med-and-down">
+					<?php wp_nav_menu(); ?>	
+		        </ul>
+				<ul class="side-nav" id="mobile-demo">
+					<?php wp_nav_menu(); ?> 
+				</ul>	  
+		    </div>
+		<!--</div>-->
+	</nav>
 
 	<div class="row">
-	  <h1 class="center">			
+		<h1 class="center">			
 			<a class="brand-logo" href="<?php bloginfo('url'); ?>" title="<?php bloginfo('description'); ?>"><img class="title" src="<?php if ( get_option('woo_logo') <> "" ) { echo get_option('woo_logo'); } else { bloginfo('template_directory'); ?>/images/logo.png<?php } ?>" alt="<?php bloginfo('name'); ?>" /></a>
-	  </h1>
+		</h1>
 	</div>
 	
 <!-- /#header -->

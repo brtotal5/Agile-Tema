@@ -17,22 +17,22 @@
                         </div>
                     </div>
                     <div class="col s7 offset-s5">
-                        <div class="card blue-light retira_borda retira_margin retira_sombra">
+                        <div class="card blue-light retira_borda retira_margin retira_sombra deslocamento_index">
                             <div class="card-content definir_font">
                                 <?php the_excerpt(); ?>
                             </div>
                         </div>
                     </div>
                     <div class="col s7 img_destaque_margin">
-                        <div class="card blue-grey darken-1 retira_borda retira_margin retira_sombra deslocamento_index">  
-                            <div class="card-content white-text retira_borda_padding"> 
+                        <div class="card blue-grey darken-1 retira_borda retira_margin retira_sombra">  
+                            <div class="card-content white-text"> 
                                 <?php the_content(); ?>                               
                              </div>
                         </div>
                     </div>  
                     <div class="col s5">
                         <div class="card blue-grey darken-1 retira_borda retira_margin retira_sombra">  
-                            <div class="card-content white-text retira_borda_padding"> 
+                            <div class="card-content white-text"> 
                                 <?php the_content(); ?>                              
                              </div>
                         </div>
