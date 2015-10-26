@@ -34,13 +34,13 @@
 
                         <?php endif; ?> 
                         
-                        <div class="card-content white-text">        
+                        <div class="card-content">        
                             <?php the_field('texto_destaque'); ?>
                         </div>
                                              
                         
                     </div>  
-                    <div class="col s5">                         
+                    <div class="col s5 add_margin-top">                         
                         <div class="card-content"> 
                              <?php the_content(); ?>                              
                         </div>                        

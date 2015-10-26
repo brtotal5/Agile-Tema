@@ -49,9 +49,9 @@
 
 	<nav>
 		<!--<div class="container">-->
-		    <div class="nav-wrapper">
+		    <div class="nav-wrapper  blue darken-4">
 				<div class="right hide-on-med-and-down">
-					<a class="btn waves-effect waves-light orange lighten-3 deslocamento_btn" href="#">Estou Interessado</a>
+					<a class="btn waves-effect lime darken-3 deslocamento_btn" href="#">Estou Interessado</a>
 				</div>			
 				<?php if( get_field('telefone_topo') ): ?>
 					<div class="right hide-on-med-and-down">
