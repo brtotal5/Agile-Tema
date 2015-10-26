@@ -8,7 +8,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
 
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" media="screen" />
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/style2.css" media="screen" />
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php if ( get_option('woo_feedburner_url') <> "" ) { echo get_option('woo_feedburner_url'); } else { echo get_bloginfo_rss('rss2_url'); } ?>" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />

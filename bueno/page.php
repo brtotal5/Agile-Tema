@@ -16,14 +16,14 @@
                              </div>
                         </div>
                     </div>
-                    <div class="col s7 offset-s5">
+                    <div class="col s6 offset-s5">
                         <div class="card blue-light retira_borda retira_margin retira_sombra deslocamento_index">
                             <div class="card-content definir_font">
                                 <?php the_excerpt(); ?>
                             </div>
                         </div>
                     </div>
-                    <div class="col s6 offset-s1 img_destaque_margin">
+                    <div class="col s5 offset-s1 img_destaque_margin">
                         <?php 
 
                             $image2 = get_field('imagem_destaque');
@@ -33,19 +33,17 @@
                                     <img id="teste" class="circle responsive-img materialboxed" src="<?php echo $image2['url']; ?>" alt="<?php echo $image2['alt']; ?>" />
 
                         <?php endif; ?> 
-                        <div class="card blue-grey darken-1 retira_borda retira_margin retira_sombra">  
-                            <div class="card-content white-text">        
-                                <?php the_field('texto_destaque'); ?>
-                            </div>
-                        </div>                      
+                        
+                        <div class="card-content white-text">        
+                            <?php the_field('texto_destaque'); ?>
+                        </div>
+                                             
                         
                     </div>  
-                    <div class="col s5">
-                        <div class="card blue-grey darken-1 retira_borda retira_margin retira_sombra">  
-                            <div class="card-content white-text"> 
-                                <?php the_content(); ?>                              
-                             </div>
-                        </div>
+                    <div class="col s5">                         
+                        <div class="card-content"> 
+                             <?php the_content(); ?>                              
+                        </div>                        
                     </div> 
 
                 </section>            
